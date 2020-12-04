@@ -10,25 +10,31 @@
     tools:ignore="ExtraText">
 
     <LinearLayout
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Team A"
-        android:textColor="#F66868"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/boarder"
-        android:text="0"
-        android:textSize="72sp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textColor="#F66868"
+            android:textSize="36sp"
+            android:textStyle="bold" />
 
-    <Space android:layout_height="20dp" />
-    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boarder"
+            android:text="0"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -43,7 +49,9 @@
             android:textColor="#FFFFFF"
             android:textSize="36sp" />
 
-        <Space android:layout_width="60dp" />
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="0dp" />
 
         <Button
             android:layout_width="80dp"
@@ -55,7 +63,7 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="30dp" />
+            android:layout_height="20dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,7 +74,7 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -84,7 +92,9 @@
             android:textSize="72sp"
             android:textStyle="bold" />
 
-        <Space android:layout_height="20dp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
 
     </LinearLayout>
 
@@ -101,7 +111,9 @@
             android:textColor="#FFFFFF"
             android:textSize="36sp" />
 
-        <Space android:layout_width="60dp" />
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="0dp" />
 
         <Button
             android:layout_width="80dp"
