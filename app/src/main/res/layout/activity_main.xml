@@ -29,6 +29,7 @@
             android:background="@drawable/boarder"
             android:text="0"
             android:textSize="72sp"
+            android:id="@+id/scoreTeamA"
             android:textStyle="bold" />
 
         <Space
@@ -47,6 +48,7 @@
             android:background="@drawable/circlebutton"
             android:text="-1"
             android:textColor="#FFFFFF"
+            android:onClick="subOneForTeamA"
             android:textSize="36sp" />
 
         <Space
@@ -59,6 +61,7 @@
             android:background="@drawable/circlebutton"
             android:text="+1"
             android:textColor="#FFFFFF"
+            android:onClick="addOneForTeamA"
             android:textSize="36sp" />
 
         <Space
@@ -90,6 +93,7 @@
             android:background="@drawable/boarder"
             android:text="0"
             android:textSize="72sp"
+            android:id="@+id/scoreTeamB"
             android:textStyle="bold" />
 
         <Space
@@ -109,6 +113,7 @@
             android:background="@drawable/circlebutton2"
             android:text="-1"
             android:textColor="#FFFFFF"
+            android:onClick="subOneForTeamB"
             android:textSize="36sp" />
 
         <Space
@@ -121,7 +126,8 @@
             android:background="@drawable/circlebutton2"
             android:text="+1"
             android:textColor="#FFFFFF"
-            android:textSize="36sp" />
+            android:onClick="addOneForTeamB"
+            android:textSize="36sp" />/>
     </LinearLayout>
 
 </LinearLayout>
