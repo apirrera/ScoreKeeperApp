@@ -38,23 +38,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.scoreTeamA);
+        TextView scoreView = findViewById(R.id.scoreTeamA);
         scoreView.setText(String.valueOf(score));
     }
 
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.scoreTeamB);
+        TextView scoreView = findViewById(R.id.scoreTeamB);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void ResetScoreA(View v) {
+    public void ResetScore(View v) {
         scoreTeamA = 0;
-        displayForTeamA(scoreTeamA);
-    }
-
-    public void ResetScoreB(View v) {
         scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
 }
+
 

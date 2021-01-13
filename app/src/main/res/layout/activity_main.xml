@@ -1,160 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="@drawable/backgroundimage"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/boarder"
+        android:text="@string/scoreboard"
+        android:textColor="#F66868"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Team A"
+            android:layout_gravity="center"
+            android:text="@string/home"
             android:textColor="#F66868"
-            android:textSize="36sp"
+            android:textSize="45sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/boarder"
-            android:text="0"
-            android:textSize="72sp"
             android:id="@+id/scoreTeamA"
-            android:textStyle="bold" />
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="10dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/circlebutton"
-            android:text="-1"
-            android:textColor="#FFFFFF"
-            android:onClick="subOneForTeamA"
-            android:textSize="36sp" />
-
-        <Space
-            android:layout_width="60dp"
-            android:layout_height="0dp" />
-
-        <Button
-            android:layout_width="90dp"
-            android:layout_height="60dp"
-            android:background="@drawable/resetbutton"
-            android:onClick="ResetScoreA"
-            android:text="Reset"
-            android:textColor="#F66868"
-            android:textSize="20sp" />
-
-        <Space
-            android:layout_width="60dp"
-            android:layout_height="0dp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/circlebutton"
-            android:text="+1"
-            android:textColor="#FFFFFF"
-            android:onClick="addOneForTeamA"
-            android:textSize="36sp" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="20dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="10dp" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Team B"
-            android:textColor="#75CDFF"
+            android:layout_gravity="center"
+            android:background="@drawable/boarder"
+            android:text="0"
             android:textSize="36sp"
             android:textStyle="bold" />
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circlebutton"
+                android:onClick="addOneForTeamA"
+                android:text="@string/addone"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circlebutton"
+                android:onClick="subOneForTeamA"
+                android:text="@string/subtractone"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/guest"
+            android:textColor="#75CDFF"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/scoreTeamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@drawable/boarder"
             android:text="0"
-            android:textSize="72sp"
-            android:id="@+id/scoreTeamB"
+            android:textSize="36sp"
             android:textStyle="bold" />
 
         <Space
             android:layout_width="0dp"
             android:layout_height="10dp" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circlebutton2"
+                android:onClick="addOneForTeamB"
+                android:text="@string/addone"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circlebutton2"
+                android:onClick="subOneForTeamB"
+                android:text="@string/subtractone"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="570dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/circlebutton2"
-            android:text="-1"
-            android:textColor="#FFFFFF"
-            android:onClick="subOneForTeamB"
-            android:textSize="36sp" />
-
-        <Space
-            android:layout_width="60dp"
-            android:layout_height="0dp" />
-
-        <Button
-            android:layout_width="90dp"
-            android:layout_height="60dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:background="@drawable/resetbutton"
-            android:onClick="ResetScoreB"
-            android:text="Reset"
-            android:textColor="#75CDFF"
-            android:textSize="20sp" />
-
-        <Space
-            android:layout_width="60dp"
-            android:layout_height="0dp" />
-
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/circlebutton2"
-            android:text="+1"
-            android:textColor="#FFFFFF"
-            android:onClick="addOneForTeamB"
-            android:textSize="36sp" />
-
+            android:onClick="ResetScore"
+            android:text="@string/reset"
+            android:textColor="#F66868"
+            android:textSize="25sp" />
     </LinearLayout>
 
-</LinearLayout>
+
+</RelativeLayout>
